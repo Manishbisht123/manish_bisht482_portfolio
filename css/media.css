@@ -1,0 +1,138 @@
+/* responsive 580px */
+
+@media screen and (max-width: 580px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .image-container {
+        display: none;
+    }
+
+    .container,
+    .navbar,
+    .form {
+        width: 100%;
+    }
+
+    .content,
+    p,
+    .work-content {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .skill-container,
+    .grid-card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .primaryBtn {
+        padding: 1rem 2rem;
+        font-size: .8rem;
+    }
+
+    .timeline {
+        margin: 50px auto;
+    }
+
+    .timeline::after {
+        left: 30px;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+
+    .text-box {
+        font-size: 13px;
+    }
+
+    .text-box small {
+        margin-bottom: 10px;
+    }
+
+    .right-container {
+        left: 0;
+    }
+
+    .left-container img,
+    .right-container img {
+        left: 10px;
+    }
+
+    .left-container-arrow,
+    .right-container-arrow {
+        border-right: 15px solid var(--secondary-grey);
+        border-left: 0;
+        left: -15px;
+    }
+    .actions{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .Hobbies, h4{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .skill-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* responsive 980px */
+
+@media screen and (max-width: 980px) {
+    .navbar {
+        padding: 18px 4%;
+    }
+
+    .image-container {
+        height: 300px;
+        width: 100%;
+    }
+
+    .navlist {
+        background: var(--white);
+        position: absolute;
+        flex-direction: column;
+        top: 12%;
+        right: 0;
+        padding: 2rem 6rem;
+        border-radius: 6px;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.15), 0 2px 2px rgba(0,0,0,0.15), 0 4px 4px rgba(0,0,0,0.15), 0 8px 8px rgba(0,0,0,0.15);
+        transform: translateX(100%);
+        transition: transform .3s ease-in-out;
+    }
+
+    .navlist-active {
+        transform: translateX(-10%);
+    }
+
+    .hamburger {
+        display: block;
+        font-weight: 700;
+        color: var(--primary-green);
+    }
+}
